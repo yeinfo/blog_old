@@ -1,14 +1,161 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<titlt>
-</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            line-height: 24px;
+            font-size: 16px;
+        }
+        a{
+            text-decoration:none;
+            color: black;
+        }
+
+
+        div.container {
+            font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Verdana, Roboto, Noto, Helvetica Neue, sans-serif !important;
+        }
+
+        .header {
+            height: 100px;
+
+        }
+        .logo {
+            line-height: 100px;
+            color: black;
+            font-size: 24px;
+            font-family: Microsoft YaHei;
+            font-weight:bold;
+
+        }
+
+        .list-container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list_ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list_ul li {
+            position: relative;
+            width: 100%;
+            margin: 0 0 15px;
+            padding: 15px 2px 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+            word-wrap: break-word;
+        }
+
+        li {
+            line-height: 20px;
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        .content {
+        }
+
+        .list_ul .title {
+            margin: -7px 0 4px;
+            display: inherit;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .abstract {
+            argin: 0 0 8px;
+            font-size: 13px;
+            line-height: 24px;
+            color: #999;
+        }
+
+        .left {
+            float: left;
+            width: 600px;
+        }
+
+        .right {
+            float: left;
+            width: 200px;
+        }
+
+        .wrap-img {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            margin-right: 15px;
+            right: 0;
+            width: 125px;
+            height: 100px;
+            border-radius: 5px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
 </head>
-<body style="text-align:center">
-<div style="width:100%;height:200px;">
-<div style="line-height:200px" >我的博客</div>
+<body>
+<div class="container">
+
+    <div class="list-container">
+        <div class="header">
+            <div class="width-limit">
+                <a class="logo" href="/">XXX的博客</a>
+            </div>
+        </div>
+        <ul class="list_ul" style="padding-top: 0px;">
+
+            <li>
+                <div class="content">
+                    <div class="left">
+                        <a class="title" href="detail.html">我的简历</a>
+                        <p class="abstract">
+                            个人简历，旨在于展示最好的自己。
+                        </p>
+                    </div>
+                    <div class="right">
+                        <a class="wrap-img" target="_blank">
+                            <img src="./images/1.jpg" width="100px" height="80px">
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <div class="left">
+                        <a class="title" target="_blank" href="article.html">如何GitHub搭建个人博客</a>
+                        <p class="abstract">
+                            查看官方文档教程，搭建一个属于自己的个人博客
+                        </p>
+                    </div>
+                    <div class="right">
+                        <a class="wrap-img" target="_blank" href="article.html">
+                            <img src="./images/1.jpg" width="100px" height="80px">
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
 </div>
-<div style="margin:0 auto">
-<iframe src="./1.pdf" width="90%" height="100%"></iframe>
-</div>
+
 </body>
 </html>
